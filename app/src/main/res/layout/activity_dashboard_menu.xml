@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android = "http://schemas.android.com/apk/res/android"
+    xmlns:tools = "http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height = "match_parent"
+    tools:context=".DashboardMenu">
+
+    <RelativeLayout
+        android:id="@+id/Loginbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#e8e8e8">
+        <TextView
+            android:id="@+id/Cancel_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:clickable="true"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/Done_button"
+            android:layout_width="74dp"
+            android:layout_height="40dp"
+            android:background="@drawable/textview_border"
+            android:text="Done"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:layout_marginRight="12dp"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:clickable="true"
+            />
+    </RelativeLayout>
+    
+    <EditText
+        android:id="@+id/Username"
+        android:layout_marginTop="3dp"
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/Loginbar"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/textview_border"
+        android:hint="Full Name"
+        android:gravity="center_vertical"
+        android:paddingLeft="8dp"
+        android:textStyle="bold"
+        android:textColor="#6e6f6d"/>
+
+    <EditText
+        android:id="@+id/Email"
+        android:layout_marginTop="3dp"
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/Username"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/textview_border"
+        android:hint="Email"
+        android:gravity="center_vertical"
+        android:paddingLeft="8dp"
+        android:textStyle="bold"
+        android:textColor="#6e6f6d"/>
+
+    <EditText
+        android:id="@+id/Password"
+        android:layout_marginTop="3dp"
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/Email"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/textview_border"
+        android:hint="Password"
+        android:gravity="center_vertical"
+        android:paddingLeft="8dp"
+        android:textStyle="bold"
+        android:textColor="#6e6f6d"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Password"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/Terms_text">
+        <TextView
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:text="By signing up you indicate that you have read "
+            android:layout_marginTop="25dp"
+            android:gravity="center_horizontal"
+            android:textSize="17dp"/>
+
+        <TextView
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:text="and agree to the "
+            android:layout_marginTop="45dp"
+            android:gravity="left"
+            android:paddingLeft="47dp"
+            android:textSize="17dp"/>
+
+        <TextView
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:text="Terms of Service"
+            android:layout_marginTop="45dp"
+            android:paddingRight="47dp"
+            android:gravity="right"
+            android:textSize="17dp"
+            android:textColor="#005dbd"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Incorrect Data Input. Please try again"
+        android:id="@+id/txtCounter"
+        android:layout_below="@+id/Terms_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textSize="17dp"
+        android:textColor="#bd0500"/>
+
+</RelativeLayout>
+

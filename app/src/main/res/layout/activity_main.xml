@@ -1,0 +1,146 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<RelativeLayout
+    xmlns:android = "http://schemas.android.com/apk/res/android"
+    xmlns:tools = "http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height = "match_parent"
+    tools:context = ".MainActivity"
+    android:background="#9d0901">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+
+            <TextView
+                android:id="@+id/Logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quora"
+                android:textSize="80dp"
+                android:textColor="@color/white"
+                android:layout_centerHorizontal="true"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Google_login"
+                android:layout_below="@+id/Logo"
+                android:layout_marginTop="40dp"
+                android:clickable="true">
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/screen_shot_2021_03_19_at_19_16_51"/>
+                <TextView
+                android:layout_width="350dp"
+                android:layout_height="55dp"
+                android:background="@drawable/button_border"
+                android:gravity="center_vertical"
+                android:paddingLeft="48dp"
+                android:text="Sign Up With Google"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Facebook_login"
+                android:layout_marginTop="15dp"
+                android:layout_below="@+id/Google_login"
+                android:clickable="true">
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="7dp"
+                    android:src="@drawable/facebook_icon_png_774"/>
+                <TextView
+                    android:layout_width="350dp"
+                    android:layout_height="55dp"
+                    android:background="@drawable/button_border"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="48dp"
+                    android:text="Sign Up With Facebook"
+                    android:textColor="@color/white"
+                    android:textSize="22dp"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Twitter_login"
+                android:layout_marginTop="15dp"
+                android:layout_below="@+id/Facebook_login"
+                android:clickable="true">
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/clipart363919"/>
+                <TextView
+                android:layout_width="350dp"
+                android:layout_height="55dp"
+                android:background="@drawable/button_border"
+                android:gravity="center_vertical"
+                android:paddingLeft="48dp"
+                android:text="Sign Up With Twitter"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+            </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/Second_Layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Twitter_login"
+            android:layout_marginTop="25dp"
+            android:layout_centerHorizontal="true"
+            >
+                <LinearLayout
+                    android:id="@+id/Login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_centerHorizontal="true">
+                    <TextView
+                        android:id="@+id/Login_button"
+                        android:clickable="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Login"
+                        android:textColor="@color/white"
+                        android:textSize="22dp"/>
+                    <TextView
+                        android:id="@+id/SignUp_button"
+                        android:clickable="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:text="Sign Up With Email"
+                        android:textSize="22dp"
+                        android:layout_marginLeft="33dp"/>
+                </LinearLayout>
+
+            <TextView
+                android:id="@+id/TermsOfService"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="By continuing you indicate that you have read and agree to the Terms of Service"
+                android:layout_below="@+id/Login"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center_horizontal"
+                android:textSize="18dp"
+                android:textColor="@color/white"
+                android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+        </RelativeLayout>
+
+</RelativeLayout>

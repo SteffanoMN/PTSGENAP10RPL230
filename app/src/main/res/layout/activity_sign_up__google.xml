@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android = "http://schemas.android.com/apk/res/android"
+    xmlns:tools = "http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height = "match_parent"
+    tools:context=".DashboardMenu">
+
+    <ImageView
+        android:id="@+id/Google_logo"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:src="@drawable/google_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"/>
+
+    <TextView
+        android:id="@+id/SignIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign In"
+        android:textSize="30dp"
+        android:layout_below="@+id/Google_logo"
+        android:layout_marginTop="13dp"
+        android:layout_centerHorizontal="true"/>
+
+    <LinearLayout
+        android:id="@+id/NormalText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/SignIn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:id="@+id/FirstText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17dp"
+            android:text="with your Google Account. "/>
+
+        <TextView
+            android:id="@+id/SecondText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17dp"
+            android:layout_below="@+id/SignIn"
+            android:text="Learn More"
+            android:textColor="#005dbd"/>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/EmailorPhone"
+        android:layout_below="@+id/NormalText"
+        android:layout_width="370dp"
+        android:layout_height="50dp"
+        android:background="@drawable/textview_border"
+        android:hint="Email or Phone"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="15dp"
+        android:layout_marginTop="25dp"
+        android:textColor="#7d7d7d"
+        android:singleLine="true"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/EmailorPhone"
+        android:id="@+id/warning"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp">
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:src="@drawable/warning"
+            android:layout_centerVertical="true"
+            />
+        <TextView
+        android:id="@+id/Error"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:paddingLeft="60px"
+        android:textSize="14dp"
+        android:text="enter a valid email or phone number"
+        android:textColor="#9d0901"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/ForgotEmail"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:textSize="17dp"
+        android:layout_below="@+id/EmailorPhone"
+        android:text="Forgot Email?"
+        android:layout_marginTop="10dp"
+        android:textColor="#005dbd"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/NewAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:text="Create Account"
+        android:layout_marginBottom="34dp"
+        android:layout_marginLeft="27dp"
+        android:textColor="#005dbd"/>
+
+    <Button
+        android:id="@+id/Complete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NEXT"
+        android:background="@drawable/button_radius"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"/>
+
+
+</RelativeLayout>
